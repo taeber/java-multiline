@@ -1,0 +1,27 @@
+syntax = "proto2";
+
+package triples;
+
+option java_multiple_files = true;
+option java_package = "com.rapczak.taeber.protobuf";
+option java_outer_classname = "Triples";
+
+message Thing {
+    oneof key {
+        string name = 1;
+        int64 id = 2;
+    }
+}
+
+enum Predicate {
+    UNSPECIFIED = 0;
+    HAS = 1;
+    KNOWS = 2;
+    RUNS = 3;
+}
+
+message Expression {
+    optional Thing subject = 1;
+    optional Predicate predicate = 2;
+    optional Thing object = 3;
+}
