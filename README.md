@@ -45,8 +45,9 @@ Honestly, not bad once you get used to it and if you have an ML-assisted
 editor, you probably wouldn't think twice.
 
 I've dealt with much more complex messages and wished that I could just use
-`String.format` with the template I was given, but alas there's no multiline
-string literals in Java (yet?), so it becomes:
+`String.format` with the template I was given, but alas there was no multiline
+string literal support in Java before Java 13
+([JEP-355](https://openjdk.org/jeps/355)), so it becomes:
 
 ```java
 String msg = String.format(
