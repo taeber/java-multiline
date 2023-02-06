@@ -41,7 +41,7 @@ Expression expr =
 ```
 
 Honestly, not bad once you get used to it and if you have an ML-assisted editor,
-you'd probably wouldn't think twice.
+you probably wouldn't think twice.
 
 I've dealt with much more complex messages and wished that I could just use
 `String.format` with the template I was given, but alas there's no multiline
