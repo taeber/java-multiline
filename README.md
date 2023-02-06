@@ -1,8 +1,9 @@
 # Java Multiline Strings
 
-An experiment using a custom Annotation to repurpose Javadocs as a multiline String.
+An experiment using a custom Annotation to repurpose Javadocs as a multiline
+String.
 
-_Copyright © 2023 Taeber Rapczak \<taeber@rapczak.com>_.                        
+_Copyright © 2023 Taeber Rapczak \<taeber@rapczak.com>_.
 _License: [MIT](LICENSE)_.
 
 ## Quickstart
@@ -40,15 +41,15 @@ Expression expr =
   .build();
 ```
 
-Honestly, not bad once you get used to it and if you have an ML-assisted editor,
-you probably wouldn't think twice.
+Honestly, not bad once you get used to it and if you have an ML-assisted
+editor, you probably wouldn't think twice.
 
 I've dealt with much more complex messages and wished that I could just use
 `String.format` with the template I was given, but alas there's no multiline
 string literals in Java (yet?), so it becomes:
 
 ```java
-Expression expr = String.format(
+String msg = String.format(
   "subject: {      " +
   "  id: %d        " +
   "}               " +
@@ -59,8 +60,8 @@ Expression expr = String.format(
   006, "James Bond");
 ```
 
-With the Annotation `ProtobufTemplate` and a custom Processor, you could instead
-write:
+With the Annotation `ProtobufTemplate` and a custom Processor, you could
+instead write:
 
 ```java
 /**
