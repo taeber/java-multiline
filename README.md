@@ -1,4 +1,6 @@
-# Protobuf Message Templates
+# Java Multi-line Strings
+
+## Protobuf Message Templates
 
 ```proto2
 subject: {

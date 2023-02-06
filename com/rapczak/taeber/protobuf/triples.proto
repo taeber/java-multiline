@@ -17,7 +17,7 @@ enum Predicate {
     UNSPECIFIED = 0;
     HAS = 1;
     KNOWS = 2;
-    RUNS = 3;
+    LOVES = 3;
 }
 
 message Expression {
